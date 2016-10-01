@@ -4,7 +4,6 @@ This is a static website for [Purple Rose Services](#).
 It was built using:
 - Harp.js
 - Gulp
-- Free [HTML5 Up](https://html5up.net/forty) theme
 - Deployed on [Surge.sh](http://surge.sh)
 
 ## Want your own Static website?
