@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	var wHeight = $(window).height();
-
 	// Initialize WOW plugin for animations
 	new WOW().init();
 
@@ -31,10 +29,6 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-
-	// Make the jumbotron full height
-
-	$('#homejb').height( wHeight );
 
 	// At top of page make Navbar transparent
 

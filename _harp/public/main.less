@@ -1,22 +1,13 @@
 @import url('_less/bootstrap.less');
+html{
+  height: 100%;
+}
 body {
-  //padding-top: 50px;
+  padding-top: 50px;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  height: 100%;
+  width: 100%;
 }
-
-h1{
-
-}
-
-h2{
-	// color: darken(@brand-primary,25%);
-}
-
-h3{
-
-}
-
-/* Layout */
 
 .img-centered{
   margin: 0px auto;
@@ -26,199 +17,45 @@ h3{
   padding-bottom: 70px;
 }
 
-/* Navigation */
-
-.nav-link{
-	font-size: 1.4em;
-	font-weight: bold;
-}
-
-
-// Navbar
-
-.navbar-default{
-  background-color: rgba(250,250,250,0);
-  // background: none;
-  & .container{
-    background-color: rgba(250,250,250,0);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  & .navbar-brand {
-    padding: 5px;
-    & > img {
-      height: 115%;
-      width: 250px;
-    }
-  }
-
-
-}
-@media screen and (max-width: 600px){
-	#bs-example-navbar-collapse-1{
-		background: #1582a2;
-	}
-
-	.navbar-shrink{
-		background-color: #1582a2;
-	}
-}
-
-.navbar-shrink{
-  background-color: #38BEE5;
-  background-color: darken(#38BEE5, 20%);
-  font-size: 0.8em;
-  & .container{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  & .navbar-brand {
-    padding: 5px;
-    & > img {
-      height: 100%;
-      width: 210px;
-    }
-  }
-
-
-}
-
-
-/* Jumbotron */
-
-.jumbotron{
-  background: none;
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
   color: #fff;
-  padding-left: 0px!important;
-  padding-top: 80px;
-  padding-bottom: 0px;
-}
-
-#homejb{
-  background: url('img/jumbotron.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../img/jumbotron.jpg');
   background-position: center;
-}
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 
-/* Home Lead Sections */
-.home-lead {
-  background: darken(@brand-primary, 20%);
-  color: #fff;
-  & p{
-    font-style: italic;
-		padding-top: 15px;
-    font-size: 1.6em;
-  }
-	&:hover{
+  .header-container{
+    position: relative;
+    width: 100%;
+    padding: 100px 15px 70px;
+    text-align: center;
 
-	}
-}
+    .header-content{
+      h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 300;
+      }
 
-/* About */
-
-#about{
-  background-image: url('img/subtlenet2.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-
-/* Solutions */
-
-
-#solutions{
-	background-image: url('img/subtlenet2.png');
-  padding-bottom: 20px;
-  & h1{
-    margin-bottom: 25px;
-  }
-}
-.package{
-  background: @brand-primary;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  & ul{
-    & li{
-      font-size: 1.3em;
-    }
-  }
-  & > .p-heading{
-    margin: 0;
-    padding: 8px 10px;
-    background: darken(@brand-primary, 10%);
-    & > h3 {
-      margin: 0px;
-      font-size: 2em;
-    }
-  }
-  & > .p-content{
-    padding: 15px 15px 35px;
-  }
-  &.popular{
-    width: 110%;
-    margin-left: -5%;
-    height: 150%!important;
-    margin-top: -5%;
-    background: @brand-secondary;
-    & > .p-heading{
-      background: darken(@brand-secondary, 10%);
-      & h3{
-        font-size: 2.3em;
+      p {
+        margin-bottom: 50px;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(255,255,255,.7);
       }
     }
-    & > .p-content{
-      padding-bottom: 70px;
-    }
   }
 }
 
-/* Portfolio Section */
-
-#portfolio{
-	margin: 0px;
-	& .col-md-3{
-		position: relative;
-		padding: 0px;
-		& .box-bg{
-			position: relative;
-			height: 100%;
-			width: 100%;
-			& img{
-				// height: 100%;
-			}
-		}
-		& .box-content{
-			position: absolute;
-			top: 0px;
-			background: rgba(17,68,83,0.85);
-			padding: 10%;
-			height: 100%;
-			width: 100%;
-			& a {
-				color: #fff;
-				}& i{
-					margin: 0px auto;
-					text-align: center;
-					font-size: 6em;
-					color: #fff;
-				}
-		}
-	}
-}
-
-.close-modal{
-	float:right;
-	padding: 20px;
-	font-size: 2.3em;
-}
-
-/* Footer */
-
-footer{
-  background: @brand-secondary;
-  color: #fff;
+@media (min-width:768px) {
+  header {
+    min-height: 100%;
+  }
 }

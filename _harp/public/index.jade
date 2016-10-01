@@ -7,11 +7,11 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 				span.icon-bar
 			a.navbar-brand.nav-link(href="#")
-				img(src="/img/logo.png", alt="Purple Rose Translations")
+				span(class="glyphicon glyphicon-globe")
+				|  Purple Rose Translations
+				//- img(src="/img/logo.png", alt="Purple Rose Translations")
 		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 			ul.nav.navbar-nav.navbar-right
-				//- li
-				//- 	a.nav-link(href="#about") About
 				li
 					a.nav-link(href="#testimonials") Testimonials
 				li
@@ -22,10 +22,17 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 					a.nav-link(href="#contact") Contact
 
 
+header
+	.header-container
+		.header-content
+			h1 The difference between:
+			.container
+				.row
+					.col-md-5
+						h3 Some Wrong text here
+					.col-md-2
+						h6 and
+					.col-md-5
+						h3 Some better text here
+			h1 Supporting communication between two worlds
 
-
-
-footer
-	.container-fluid
-		.col-lg-12
-			h5.text-center Copyright &copy; 2016. A project of PochoLabs.
