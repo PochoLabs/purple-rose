@@ -1,42 +1,20 @@
-# Harp-Bootstrap Starter
-A rapid prototyping tool using Harp.js and Twitter Bootstrap.
+# Purple Rose Translations
+This is a static website for [Purple Rose Services](#).
 
-Harp.js can be a really cool tool for rapid prototyping, or simply some wireframing. That's how I use it at least.
+It was built using:
+- Harp.js
+- Gulp
+- Free [HTML5 Up](https://html5up.net/forty) theme
+- Deployed on [Surge.sh](http://surge.sh)
 
-This is a tool I built for myself so I can easily make wireframes for clients.
+## Want your own Static website?
 
-## Requirements
+You can contact me at [celso@pocholabs](mailto:celso@pocholabs) about your project.
 
-Assuming you have NPM (Node Package Manager) on your machine, just run:
-```
-sudo npm install -g harp
-```
-If command is not working visit [their site](http://harpjs.com) for complete instructions.
-## How To Use
+Not all organizations need a WordPress website or a server backend. If you think your business or organization can leverage the simplicity of static website, we'd love to talk!
 
-### For Rapid Protopyping
+## How do I know if I can use a static website?
 
-First clone the repository to your working directory
-```
-git clone https://github.com/celsom3/Harp-Bootstrap-Starter.git
-```
-Move into that directory
-```
-cd Harp-Bootstrap-Starter
-```
-Since you already have Harp.js installed, just run:
-```
-harp server
-```
-
-### Compiling
-
-Once your are done, you might like to use the compiled files for whatever reasons (WordPress theme, Drupal theme, Meteor, Static Site server, etc). To get that output simply run the command:
-```
-harp compile
-```
-This will generate a `/www` folder in your directory where the compile and minified html, css, and JavaScript will be.
-
-## Buy me a coffee
-
-If you like this tool, consider [buying a cup of coffee](https://cash.me/$celsom3).
+- I don't need (or have the capacity) to constantly make edits.
+- I don't need a blog hosted on the same domain OR I have a blog hosted on a subdomain
+- I'm on a budget, I would rather not pay for hosting.
