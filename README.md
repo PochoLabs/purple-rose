@@ -6,6 +6,10 @@ It was built using:
 - Gulp
 - Deployed on [Surge.sh](http://surge.sh)
 
+## Notes
+
+The temporary URL for this site is [hospitable-achieve.surge.sh](http://hospitable-achieve.surge.sh).
+
 ## Want your own Static website?
 
 You can contact me at [celso@pocholabs](mailto:celso@pocholabs) about your project.
