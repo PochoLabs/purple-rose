@@ -1,16 +1,16 @@
 nav#site-nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 	div.container
 		div.navbar-header
-			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse")
 				span.sr-only Toggle navigation
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-			a.navbar-brand.nav-link(href="#")
+			a.navbar-brand.nav-link(href="#header")
 				span(class="glyphicon glyphicon-globe")
 				|  Purple Rose Translations
 				//- img(src="/img/logo.png", alt="Purple Rose Translations")
-		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+		div.collapse.navbar-collapse(id="navbar-collapse")
 			ul.nav.navbar-nav.navbar-right
 				li
 					a.nav-link(href="#testimonials") Testimonials
@@ -22,7 +22,7 @@ nav#site-nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 					a.nav-link(href="#contact") Contact
 
 
-header
+header#header
 	.header-container
 		.header-content.wow.fadeIn
 
@@ -51,22 +51,38 @@ section#testimonials
 			.col-md-12
 				h1 Testimonials
 
-		.row 
-			.col-md-6
-				p “I met Ileana at a community meeting where I was one of the few non-Spanish speakers; her expert simultaneous interpretation conveyed the information and captured the energy of the gathering. Since then I’ve asked Ileana to do interpretation for several interviews with Spanish language speakers. Each time she has been prompt and professional, and has offered interpretation in seamless, idiomatic English. And her kind and gracious manner puts everyone at ease. I feel lucky to have had the opportunity to work with her!”
-				p - Kathryn Abrams, Herma Hill Kay Distinguished Professor of Law, UC-Berkeley School of Law
-			.col-md-6
-				p “We were having a staff meeting with guest speakers who preferred to present in Spanish. At first we considered having one of our own staff members interpret simultaneously, but that was not ideal because we wanted all of the staff to be able to take part in the meeting. We contacted Ileana and she quickly responded that she would be available. She was very easy to work with, was responsive to our inquiry, and charges a reasonable fee. It was a perfect solution. We will definitely reach out to her again.”
-				p - Steve Kilar, Communications Director, American Civil Liberties Union of Arizona
-
-
 		.row
-			.col-md-6
-				p “We needed interpretation for an event and document translation for an art exhibition with a quick turn-around. The work was very professional, accurate and fast.”
-				p - Julio Morales, Curator, ASU Art Museum
-			.col-md-6 
-				p "At YCM we take great pride in working with and for people we know on a personal level. Ileana (Purple Rose Services) is one of those people who we work with at YCM. Whether it is client work or internal, we have complete trust in her to be on time and accurate with the work she does for us." 
-				p - Carla Chavarria, Founder, YCM Marketing
+			.col-md-12
+				#testimonial-carousel.owl-carousel.owl-theme
+					.quote-item
+						p “I met Ileana at a community meeting where I was one of the few non-Spanish speakers; her expert simultaneous interpretation conveyed the information and captured the energy of the gathering. Since then I’ve asked Ileana to do interpretation for several interviews with Spanish language speakers. Each time she has been prompt and professional, and has offered interpretation in seamless, idiomatic English. And her kind and gracious manner puts everyone at ease. I feel lucky to have had the opportunity to work with her!”
+						p - Kathryn Abrams, Herma Hill Kay Distinguished Professor of Law, UC-Berkeley School of Law
+					.quote-item
+						p “We were having a staff meeting with guest speakers who preferred to present in Spanish. At first we considered having one of our own staff members interpret simultaneously, but that was not ideal because we wanted all of the staff to be able to take part in the meeting. We contacted Ileana and she quickly responded that she would be available. She was very easy to work with, was responsive to our inquiry, and charges a reasonable fee. It was a perfect solution. We will definitely reach out to her again.”
+						p - Steve Kilar, Communications Director, American Civil Liberties Union of Arizona
+					.quote-item
+						p “We needed interpretation for an event and document translation for an art exhibition with a quick turn-around. The work was very professional, accurate and fast.”
+						p - Julio Morales, Curator, ASU Art Museum
+					.quote-item
+						p "At YCM we take great pride in working with and for people we know on a personal level. Ileana (Purple Rose Services) is one of those people who we work with at YCM. Whether it is client work or internal, we have complete trust in her to be on time and accurate with the work she does for us." 
+						p - Carla Chavarria, Founder, YCM Marketing
+
+		//- .row 
+		//- 	.col-md-6
+		//- 		p “I met Ileana at a community meeting where I was one of the few non-Spanish speakers; her expert simultaneous interpretation conveyed the information and captured the energy of the gathering. Since then I’ve asked Ileana to do interpretation for several interviews with Spanish language speakers. Each time she has been prompt and professional, and has offered interpretation in seamless, idiomatic English. And her kind and gracious manner puts everyone at ease. I feel lucky to have had the opportunity to work with her!”
+		//- 		p - Kathryn Abrams, Herma Hill Kay Distinguished Professor of Law, UC-Berkeley School of Law
+		//- 	.col-md-6
+		//- 		p “We were having a staff meeting with guest speakers who preferred to present in Spanish. At first we considered having one of our own staff members interpret simultaneously, but that was not ideal because we wanted all of the staff to be able to take part in the meeting. We contacted Ileana and she quickly responded that she would be available. She was very easy to work with, was responsive to our inquiry, and charges a reasonable fee. It was a perfect solution. We will definitely reach out to her again.”
+		//- 		p - Steve Kilar, Communications Director, American Civil Liberties Union of Arizona
+		//- 
+		//- 
+		//- .row
+		//- 	.col-md-6
+		//- 		p “We needed interpretation for an event and document translation for an art exhibition with a quick turn-around. The work was very professional, accurate and fast.”
+		//- 		p - Julio Morales, Curator, ASU Art Museum
+		//- 	.col-md-6 
+		//- 		p "At YCM we take great pride in working with and for people we know on a personal level. Ileana (Purple Rose Services) is one of those people who we work with at YCM. Whether it is client work or internal, we have complete trust in her to be on time and accurate with the work she does for us." 
+		//- 		p - Carla Chavarria, Founder, YCM Marketing
 
 section#about
 	.container
