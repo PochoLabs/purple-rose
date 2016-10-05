@@ -69,6 +69,8 @@ body {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
+
+
 .img-centered{
   margin: 0px auto;
 }
@@ -101,6 +103,23 @@ body {
       color: #fff;
       letter-spacing: 0.1em;
 			font-size: 1.1em;
+			.purple-rose{
+				-webkit-mask-image: url('img/purple-rose.svg');
+				mask-image: url('img/purple-rose.svg');
+				-webkit-mask-size: cover;
+  			mask-size: cover;
+				width: 30px;
+				height: 30px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				display: inline;
+				float:left;
+				margin-right: 10px;
+				background-color: #fff;
+				position: relative;
+				top: -5px;
+				overflow: visible;
+			}
       &:hover, &:focus {
         color: @rgba-secondary-2-1;
       }
@@ -172,6 +191,9 @@ body {
     .navbar-header{
       .navbar-brand{
         color: #5c0165;
+				.purple-rose{
+					background-color: #5c0165;
+				}
         &:focus, &:hover{
 
         }
