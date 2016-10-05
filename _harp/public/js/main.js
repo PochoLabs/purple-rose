@@ -23,10 +23,25 @@ $(document).ready(function(){
 	// Initialize Owl Carousel sliders
 	$('#testimonial-carousel').owlCarousel({
 		navigation: true,
-		slideSpeed: 300,
-		paginationSpeed: 400,
+		slideSpeed: 200,
+		paginationSpeed: 600,
 		singleItem: true,
-		autoPlay: true
+		autoPlay: true,
+		stopOnHover: true
+	});
+
+	// Initialize modals
+	$('#service1').apFullscreenModal({
+		openSelector: '#service1-link',
+		showCloseButton: true
+	});
+	$('#service2').apFullscreenModal({
+		openSelector: '#service2-link',
+		showCloseButton: true
+	});
+	$('#service3').apFullscreenModal({
+		openSelector: '#service3-link',
+		showCloseButton: true
 	});
 
 

@@ -173,7 +173,7 @@ body {
       .navbar-brand{
         color: #5c0165;
         &:focus, &:hover{
-          
+
         }
       }
     }
@@ -219,6 +219,10 @@ header {
         font-weight: 300;
       }
 
+			h3 {
+				font-family: 'Kalam', cursive;
+			}
+
       p {
         margin-bottom: 50px;
         font-size: 16px;
@@ -237,6 +241,26 @@ header {
   header {
     min-height: 100%;
     padding: 20% 1%;
+
+		.header-container{
+			.header-content{
+				h1 {
+					font-size: 4.6em;
+
+				}
+
+				h3 {
+					font-size: 4em;
+					font-style: italic;
+
+				}
+
+				h6 {
+					font-size: 3.3em;
+				}
+			}
+		}
+
   }
 }
 
@@ -250,7 +274,7 @@ section{
   margin: 0px;
 
   h1{
-    color: @brand-secondary;
+    color: darken(@brand-secondary, 10%);
     font-style: oblique;
     text-align: center;
     font-size: 40px;
@@ -269,6 +293,105 @@ section{
 	background-attachment: fixed;
 	background-position: top center;
 	background-size: cover;
+
+	#testimonial-carousel{
+		margin-top: 30px;
+	}
+
+	.quote-item{
+		p {
+			font-size: 1.5em;
+			font-weight: lighter;
+			color: lighten(@brand-secondary, 45%);
+
+			&.author {
+				font-size: 1.3em;
+				margin-left: 10px;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+#service1 {
+	height: 100%!important;
+	min-height: 100%;
+	position: relative;
+}
+
+a.service-link{
+	position: relative;
+	display: block;
+	margin-top: 30px;
+
+	& .sl-bg {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	& .sl-content{
+		top:0px;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(51, 5, 65, 0.76);
+		position: absolute;
+		-webkit-transition: all .30s;
+    -moz-transition: all .30s;
+    transition: all .30s;
+    -o-transition: all .30s;
+
+		& h3 {
+			text-align: center;
+			padding: 35% 10% 10% 10%;
+			color: #fff;
+			font-size: 2em;
+			-webkit-transition: all .30s;
+	    -moz-transition: all .30s;
+	    transition: all .30s;
+	    -o-transition: all .30s;
+		}
+
+		&:hover, &:focus{
+			background-color: rgba(126, 74, 142, 0.76);
+			-webkit-transition: all .30s;
+	    -moz-transition: all .30s;
+	    transition: all .30s;
+	    -o-transition: all .30s;
+
+			& h3 {
+				font-size: 2.3em;
+				padding: 20% 0 0 0;
+				-webkit-transition: all .30s;
+		    -moz-transition: all .30s;
+		    transition: all .30s;
+		    -o-transition: all .30s;
+			}
+		}
+	}
+}
+
+.apfm-container .apfm-wrapper {
+	height: 100%;
+}
+
+.modal-content{
+	border-radius: 0px;
+	width:100%;
+	.container{
+		margin-top: 50px;
+
+		h2{
+			font-size: 3em;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		p, li {
+			font-size: 1.3em;
+		}
+	}
 }
 
 #about, #contact {
