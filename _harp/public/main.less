@@ -395,9 +395,6 @@ a.service-link{
 
 	&:hover, &:focus{
 		transform: scale(1.1);
-		.sl-bg > img{
-
-		}
 
 		.sl-content{
 			background-color: rgba(250,250,250, 0.85);
@@ -418,6 +415,31 @@ a.service-link{
 			color: @brand1;
 		}
 
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section#services{
+		.service-link{
+			.sl-content{
+				background-color: rgba(250,250,250, 0.85);
+			}
+
+			h3 {
+				font-size: 2.3em;
+				padding: 20% 0 0 0;
+				-webkit-transition: all .30s;
+				-moz-transition: all .30s;
+				transition: all .30s;
+				-o-transition: all .30s;
+				color: @brand1;
+			}
+
+			p > img{
+				visibility: visible;
+				color: @brand1;
+			}
+		}
 	}
 }
 
