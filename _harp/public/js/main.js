@@ -48,7 +48,11 @@ $(document).ready(function(){
 
 	$(document).scroll(function() {
 		var scrolledPx = parseInt( $(window).scrollTop() );
-		$('.header-bg').css( 'transform', 'translate3d(0px, ' + ( scrolledPx * -0.3 ) + 'px, 0px)')
+		var toScroll = parseInt(scrolledPx * 0.3);
+		if(toScroll <= 0){
+			toScroll = 0;
+		}
+		$('.header-bg').css( 'transform', 'translate3d(0px, ' + ( toScroll * -1 ) + 'px, 0px)')
 	});
 
 
