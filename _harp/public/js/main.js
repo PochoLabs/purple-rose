@@ -46,4 +46,10 @@ $(document).ready(function(){
 	});
 
 
+	$(document).scroll(function() {
+		var scrolledPx = parseInt( $(window).scrollTop() );
+		$('.header-bg').css( 'transform', 'translate3d(0px, ' + ( scrolledPx * -0.3 ) + 'px, 0px)')
+	});
+
+
 });
