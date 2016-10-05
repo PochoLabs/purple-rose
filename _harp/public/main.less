@@ -445,11 +445,14 @@ a.service-link{
 
 .apfm-container .apfm-wrapper {
 	height: 100%;
+	overflow: scroll;
 }
 
 .modal-content{
 	border-radius: 0px;
 	width:100%;
+	overflow: scroll;
+
 	.container{
 		margin-top: 50px;
 
@@ -457,10 +460,35 @@ a.service-link{
 			font-size: 3em;
 			text-align: center;
 			margin-bottom: 20px;
+			color: @brand1;
+		}
+
+		hr {
+			border-bottom: 2.5px solid @brand1;
+			border-top: 2.5px solid @brand1;
+			border-radius:5px;
+			max-width: 300px;
+			margin: 10px auto 50px;
+			position:relative;
+
+
+			&::after{
+				content: url('img/purple-rose.svg');
+				position: absolute;
+				width: 100px;
+				top: -50px;
+				left: 33%;
+				background: white;
+				width: 100px;
+				height: 100px;
+				transform: scale(0.5);
+				margin: 0px auto;
+			}
 		}
 
 		p, li {
 			font-size: 1.3em;
+			color: @brand1;
 		}
 	}
 }

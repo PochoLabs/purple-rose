@@ -34,6 +34,7 @@ $(document).ready(function(){
 	$('#service1').apFullscreenModal({
 		openSelector: '#service1-link',
 		showCloseButton: true
+		// autoOpen: true
 	});
 	$('#service2').apFullscreenModal({
 		openSelector: '#service2-link',
